@@ -81,14 +81,6 @@ class DevSetter(val context: Context) {
         }
     }
 
-    fun setSystem(key: String, config: Configuration) {
-        try {
-            Settings.System.putConfiguration(context.contentResolver, config)
-        } catch (se: SecurityException) {
-            Log.d(TAG, "Not granted permission!")
-        }
-    }
-
     fun setSecure(key: String, value: Int) {
         try {
             Settings.Secure.putInt(context.contentResolver, key, value)
