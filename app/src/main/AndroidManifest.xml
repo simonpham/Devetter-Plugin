@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+
+        <service
+            android:name=".DevetterService"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="com.github.simonpham.devetter.action.PUT_GLOBAL" />
+                <action android:name="com.github.simonpham.devetter.action.PUT_SECURE" />
+                <action android:name="com.github.simonpham.devetter.action.PUT_SYSTEM" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
