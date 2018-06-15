@@ -62,6 +62,8 @@ class DevSetter(val context: Context) {
             Settings.System.putLong(context.contentResolver, key, value)
         } catch (se: SecurityException) {
             Log.d(TAG, "Not granted permission!")
+        } catch (e: IllegalArgumentException) {
+            Log.d(TAG, "Failed to set system value!")
         }
     }
 
@@ -70,6 +72,8 @@ class DevSetter(val context: Context) {
             Settings.System.putFloat(context.contentResolver, key, value)
         } catch (se: SecurityException) {
             Log.d(TAG, "Not granted permission!")
+        } catch (e: IllegalArgumentException) {
+            Log.d(TAG, "Failed to set system value!")
         }
     }
 
@@ -78,6 +82,8 @@ class DevSetter(val context: Context) {
             Settings.System.putString(context.contentResolver, key, value)
         } catch (se: SecurityException) {
             Log.d(TAG, "Not granted permission!")
+        } catch (e: IllegalArgumentException) {
+            Log.d(TAG, "Failed to set system value!")
         }
     }
 
@@ -96,6 +102,8 @@ class DevSetter(val context: Context) {
             Settings.Secure.putLong(context.contentResolver, key, value)
         } catch (se: SecurityException) {
             Log.d(TAG, "Not granted permission!")
+        } catch (e: IllegalArgumentException) {
+            Log.d(TAG, "Failed to set system value!")
         }
     }
 
@@ -104,6 +112,8 @@ class DevSetter(val context: Context) {
             Settings.Secure.putFloat(context.contentResolver, key, value)
         } catch (se: SecurityException) {
             Log.d(TAG, "Not granted permission!")
+        } catch (e: IllegalArgumentException) {
+            Log.d(TAG, "Failed to set system value!")
         }
     }
 
@@ -112,6 +122,8 @@ class DevSetter(val context: Context) {
             Settings.Secure.putString(context.contentResolver, key, value)
         } catch (se: SecurityException) {
             Log.d(TAG, "Not granted permission!")
+        } catch (e: IllegalArgumentException) {
+            Log.d(TAG, "Failed to set system value!")
         }
     }
 }
