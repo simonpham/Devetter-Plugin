@@ -7,7 +7,9 @@
 
 Devetter Plugin
 
-### System Requirements: Android 7.0+, root (optional)
+### System Requirements: Android 4.2+, granted permissions (*).
+
+#### (*): adb shell pm grant com.github.simonpham.devetter android.permission.WRITE_SECURE_SETTINGS
 
 ### Downloads:
 <a href='https://play.google.com/store/apps/details?id=com.github.simonpham.devetter'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height="50px"/></a>
