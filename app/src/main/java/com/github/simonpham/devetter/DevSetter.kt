@@ -93,7 +93,7 @@ class DevSetter(val context: Context) {
         } catch (se: SecurityException) {
             Log.d(TAG, "Not granted permission!")
         } catch (e: IllegalArgumentException) {
-            Log.d(TAG, "Failed to set system value!")
+            Log.d(TAG, "Failed to set secure value!")
         }
     }
 
@@ -103,7 +103,7 @@ class DevSetter(val context: Context) {
         } catch (se: SecurityException) {
             Log.d(TAG, "Not granted permission!")
         } catch (e: IllegalArgumentException) {
-            Log.d(TAG, "Failed to set system value!")
+            Log.d(TAG, "Failed to set secure value!")
         }
     }
 
@@ -113,7 +113,7 @@ class DevSetter(val context: Context) {
         } catch (se: SecurityException) {
             Log.d(TAG, "Not granted permission!")
         } catch (e: IllegalArgumentException) {
-            Log.d(TAG, "Failed to set system value!")
+            Log.d(TAG, "Failed to set secure value!")
         }
     }
 
@@ -123,7 +123,7 @@ class DevSetter(val context: Context) {
         } catch (se: SecurityException) {
             Log.d(TAG, "Not granted permission!")
         } catch (e: IllegalArgumentException) {
-            Log.d(TAG, "Failed to set system value!")
+            Log.d(TAG, "Failed to set secure value!")
         }
     }
 }
